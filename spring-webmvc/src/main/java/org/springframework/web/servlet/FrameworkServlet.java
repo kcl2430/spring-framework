@@ -611,7 +611,7 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 			// user has performed any initialization such as setting the context id
 			wac = findWebApplicationContext();
 		}
-		// 第三种，创建一个 WebApplicationContext 对象
+		// 第三种，创建一个 WebApplicationContext 对象  一般会进入这里
 		if (wac == null) {
 			// No context instance is defined for this servlet -> create a local one
 			wac = createWebApplicationContext(rootContext);
